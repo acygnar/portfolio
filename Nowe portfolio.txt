@@ -1,0 +1,16 @@
+- nawigacja tylko hamburger -> click ->zas�ania ca�a strone(dwa divy 50%/50% wysuwaj�ce sie lewa/prawa)
+	* baner 100vh / animacja ?? / samuraj/ 
+	* umiejetnosci -> zak�adki taby html, css, javascript/jquerry, php/c#??, sql, 
+	* porojekty ->   galeria/kafelki po kliknieciu slider z moz�iwoscia przewijania
+	* o mnie -> kilka s�ow/ github/linkedin/cv
+	* kontakt telefon/email
+
+
+kilka animacji w keyframes
+
+
+backend php? c# ?
+
+
+
+https://favicon.io/favicon-generator/

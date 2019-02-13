@@ -207,22 +207,42 @@ header .baner img{
     transform: translateX(-100vw);
 }
 .content .technologies .skills :nth-child(1).active{
-    animation-name: slide-left;
-    animation-duration:0.5s;
+    animation-name: slide;
+    animation-duration:0.8s;
     animation-fill-mode: both;
 }
 
 .content .technologies .skills :nth-child(2){
     transform: translateX(-100vw);
 }
+.content .technologies .skills :nth-child(2).active{
+    animation-name: slide;
+    animation-duration:1.6s;
+    animation-fill-mode: both;
+}
 .content .technologies .skills :nth-child(3){
     transform: translateY(-200vh);
+}
+.content .technologies .skills :nth-child(3).active{
+    animation-name: slide;
+    animation-duration:2s;
+    animation-fill-mode: both;
 }
 .content .technologies .skills :nth-child(4){
     transform: translateX(200vw);
 }
+.content .technologies .skills :nth-child(4).active{
+    animation-name: slide;
+    animation-duration:1.6s;
+    animation-fill-mode: both;
+}
 .content .technologies .skills :nth-child(5){
     transform: translateX(200vw);
+}
+.content .technologies .skills :nth-child(5).active{
+    animation-name: slide;
+    animation-duration:0.8s;
+    animation-fill-mode: both;
 }
 .content .about-me{
     display: flex;
@@ -327,13 +347,21 @@ footer{
     background-color: #403E39;
     color: white;
 }
-@keyframes slide-left{
+@keyframes slide{
     0%{
         opacity: 0;
     }
     100%{
         opacity: 1;
         transform:translateX(0) ;
+    }
+}
+@keyframes appear {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1
     }
 }
 @media(max-wdth:1024px){

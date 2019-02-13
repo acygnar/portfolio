@@ -3,8 +3,10 @@ const leftSide=document.querySelector(".left-side");
 const rightSide=document.querySelector(".right-side");
 const navList=document.querySelector(".nav");
 const menu=document.querySelector(".menu");
-const tabContent=document.querySelectorAll(".tab-content");
-const tabItem=document.querySelectorAll("tab-item");
+const skills=document.querySelector(".skills-description");
+const firstSkill=document.querySelector(".content .technologies .skills :nth-child(1)");
+
+
 
 
 function activeBurger(){
@@ -15,6 +17,17 @@ function activeBurger(){
     menu.classList.toggle("active");
 }
 burger.addEventListener("click",activeBurger);
+
+function addAnimation(){
+    const scrollSize= window.scrollY;
+    const skillsPosition=skills.offsetTop;
+    if(scrollSize>skillsPosition){
+        firstSkill.classList.add("active");
+
+    }
+         }
+
+window.addEventListener("scroll",addAnimation);
 
 
 

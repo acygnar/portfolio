@@ -20,6 +20,7 @@
     width: 100vw;
     height: 100vh;
     visibility: hidden;
+    z-index: 999;
     
 }
 .menu.active{
@@ -77,6 +78,7 @@
     height: 25px;
     transition: .2s;
     cursor: pointer;
+    z-index:999 ;
 }
 
 .burger span {
@@ -142,9 +144,16 @@ header .baner img{
     position: relative;
     border-top:2px solid #1a1a1a;
     left:45%;
-    width: 10%;
+    width: 0;
     margin-top: 1%;
     margin-bottom: 10%;
+    opacity: 0;
+}
+.content .projects .section-spacer.active{
+    animation-name: grow;
+    animation-duration:1s;
+    animation-fill-mode: both;
+
 }
 .content .projects .gallery img{
     flex-basis: 20%;
@@ -155,6 +164,37 @@ header .baner img{
 .content .projects .gallery a:hover{
     opacity:0.8;
 
+}
+.content .projects .gallery .image{
+    visibility: hidden;
+}
+.content .projects .gallery :nth-child(1).active{
+    visibility:visible; 
+    animation-name: appear;
+    animation-delay: 0.2;
+    animation-duration:1s;
+    animation-fill-mode: both;
+}
+.content .projects .gallery :nth-child(2).active{
+    visibility:visible; 
+    animation-name: appear;
+    animation-delay:0.5s;
+    animation-duration:1s;
+    animation-fill-mode: both;
+}
+.content .projects .gallery :nth-child(3).active{
+    visibility:visible; 
+    animation-name: appear;
+    animation-delay:1s;
+    animation-duration:1s;
+    animation-fill-mode: both;
+}
+.content .projects .gallery :nth-child(4).active{
+    visibility:visible; 
+    animation-name: appear;
+    animation-delay:1.5s;
+    animation-duration:1s;
+    animation-fill-mode: both;
 }
 .no-display{
     display: none;
@@ -363,6 +403,17 @@ footer{
     100%{
         opacity:1
     }
+}
+@keyframes grow{
+    0%{
+        opacity:0
+    }
+
+    100%{
+        opacity: 1;
+        width: 10%;
+    }
+
 }
 @media(max-wdth:1024px){
     .content .projects .gallery img{

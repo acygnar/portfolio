@@ -225,9 +225,11 @@ header .baner img{
     
 }
 .content .technologies .skills-description p{
+    text-align: center;
     padding-bottom: 5%;
     padding-left: 4%;
     padding-right: 4%;
+    font-size: 17px;
 
 }
 .content .technologies .skills{
@@ -301,7 +303,11 @@ header .baner img{
 .content .about-me p{
     padding-top: 25px;
     padding-bottom:100px; 
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: center;
+    color:#737373;
+    font-size: 18px;
 }
 
 .content .contact{

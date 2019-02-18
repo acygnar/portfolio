@@ -22,11 +22,11 @@ burger.addEventListener("click", activeBurger);
 
 function addSlideAnimation() {
     const scrollSize = window.scrollY;
-    const skillsPosition = skillsDescription.offsetTop;
+    const skillsPosition = skillsDescription.offsetTop-150;
     if (scrollSize > skillsPosition) {
         for (i = 0; i <= skills.length; i++) {
             skills[i].classList.add("active");
-        }
+        }                                                   //toggle?
     } else {
         for (i = 0; i <= skills.length; i++) {
             skills[i].classList.remove("active");

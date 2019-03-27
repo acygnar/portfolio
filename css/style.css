@@ -390,8 +390,9 @@ footer{
     justify-content: center;
     align-items: center;
     height:30px;
-    background-color: #403E39;
-    color: white;
+    background-color: #151829;
+    color:#797676;
+    font-size: 12px;
 }
 @keyframes slide{
     0%{

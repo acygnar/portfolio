@@ -24,13 +24,7 @@ function addSlideAnimation() {
     const scrollSize = window.scrollY;
     const skillsPosition = skillsDescription.offsetTop-150;
     if (scrollSize > skillsPosition) {
-        for (i = 0; i <= skills.length; i++) {
-            skills[i].classList.add("active");
-        }                                                   //toggle?
-    } else {
-        for (i = 0; i <= skills.length; i++) {
-            skills[i].classList.remove("active");
-        }
+        skills.forEach((skill) => {skill.classList.add("active")});                                            
     }
 }
 
@@ -40,9 +34,7 @@ function galleryAppear(){
     const scrollSize = window.scrollY;
     if (scrollSize > 100) {
         spacer.classList.add("active")
-        for (i = 0; i <= gallery.length; i++) {
-            gallery[i].classList.add("active");
+        gallery.forEach((img) => {img.classList.add("active")});     
         }
     }
-}
 window.addEventListener("scroll", galleryAppear);

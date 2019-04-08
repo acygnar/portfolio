@@ -120,7 +120,7 @@
     width:100%;
 }*/
 header{
-    background-image: url(/img/header-pic.jpg);
+    background-image: url(../img/header-pic.jpg);
     background-size:cover;
     background-position: center center;
     width: 100%;
@@ -219,7 +219,7 @@ header .header-txt{
     flex-wrap: wrap;
     background-color: #eeeeee;
     overflow: hidden;
-    background-image: url(/img/tech.png);
+    background-image: url(../img/tech.png);
     background-size:cover;
     background-attachment: fixed;
     background-position: center center;

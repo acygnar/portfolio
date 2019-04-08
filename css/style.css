@@ -116,12 +116,28 @@
     bottom: calc(50% - 2.5px);
     transform: rotate(45deg);
 }
-header .baner img{
+/*header .baner img{
     width:100%;
+}*/
+header{
+    background-image: url(/img/header-pic.jpg);
+    background-size:cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+header .header-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size:25px;
+    padding-top: 20%;
 }
 .content .projects{
     display: flex;
     flex-wrap: wrap;
+    height:600px;
     
 }
 .content .projects .gallery{
@@ -135,7 +151,7 @@ header .baner img{
     margin-top: 5%;
     flex-basis: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 900;
     color:#6f6c6c;
 
@@ -155,11 +171,9 @@ header .baner img{
     animation-fill-mode: both;
 
 }
-.content .projects .gallery img{
-    flex-basis: 20%;
-}
 .content .projects .gallery a{
     transition: 0.5s;
+    flex-basis: 20%;
 }
 .content .projects .gallery a:hover{
     opacity:0.8;
@@ -205,21 +219,25 @@ header .baner img{
     flex-wrap: wrap;
     background-color: #eeeeee;
     overflow: hidden;
+    background-image: url(/img/tech.png);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
     
 }
 .content .technologies .skills-description{
     margin-left: 1%;
     margin-right: 1%;
-    color:#737373;
+    color:white;
     padding-bottom: 5%;
     
 }
 .content .technologies h1{
-    color: #1a1a1a;
+    color: white;
     padding-top: 5%;
     padding-bottom: 7%;
     text-align: center;
-    font-size: 25px;
+    font-size: 45px;
     
     
     
@@ -229,7 +247,9 @@ header .baner img{
     padding-bottom: 5%;
     padding-left: 4%;
     padding-right: 4%;
-    font-size: 17px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.3;
 
 }
 .content .technologies .skills{
@@ -292,6 +312,7 @@ header .baner img{
     align-items: center;
     flex-wrap: wrap;
     padding-top: 7%;
+    height: 600px;
     
 }
 .content .about-me img{

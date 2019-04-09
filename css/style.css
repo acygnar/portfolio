@@ -168,12 +168,11 @@ header .header-txt{
     animation-fill-mode: both;
 
 }
-.content .projects .gallery a{
+.content .projects .gallery a img{
     transition: 0.5s;
-    flex-basis: 20%;
 }
-.content .projects .gallery a:hover{
-    opacity:0.8;
+.content .projects .gallery a img:hover{
+    opacity:0.7;
 
 }
 .content .projects .gallery .image{
@@ -235,9 +234,6 @@ header .header-txt{
     padding-bottom: 7%;
     text-align: center;
     font-size: 45px;
-    
-    
-    
 }
 .content .technologies .skills-description p{
     text-align: center;
@@ -450,14 +446,6 @@ footer{
         padding-top: 40%;
         font-size:20px;
     }
-
-}
-
-@media(max-width:1024px){
-    .content .projects .gallery a{
-        flex-basis: 50%;
-    }
-
 }
 @media(max-width:796px){
     header .header-txt{
@@ -476,13 +464,34 @@ footer{
         padding-top: 50%;
         font-size:14px;
     }
-
+@media(max-width:528px){
+    header .header-txt{
+        padding-top: 75%;
+        font-size:10px;
+     }
+     .content .projects{
+        height:auto;
+    }
+    .content .technologies h1{
+        font-size: 35px;
+    }
+    .content .technologies .skills-description p{
+        font-size: 15px;
+    }
+    .content .technologies i{
+        font-size: 70px;
+    }
 }
 @media(max-width:428px){
     .content .contact .contact-info p{
         font-size:12px;
     }
 }
+@media(max-width:380px){
+    header .header-txt{
+        padding-top: 85%;
+        font-size:7px;
+    }
 @media(max-width:368px){
     .content .contact .contact-form form input[type=text],[type=email]{
         width:275px;
